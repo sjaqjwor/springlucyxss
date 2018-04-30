@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.TableMapper">
+
+    <insert id="save">
+        insert into mycloud.table(content)
+        VALUES (#{name});
+    </insert>
+
+    <select id="sec" resultType="String">
+      select content
+      from mycloud.table
+      where id=5;
+    </select>
+
+
+
+
+</mapper>
